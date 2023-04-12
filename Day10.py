@@ -3,6 +3,8 @@ items = {'bread': {'qty': 10, 'price':8, 'vendor':'crispy bakery', 'discount':'1
          'milo': {'qty': 40, 'price':7, 'vendor':'jelly vendors', 'discount':'10%'}}
 
 cart = {}
+qty_prompt = 0
+total_price = 0
 
 # qty_prompt = int(input())
 # print("\nNested dictionary 2-")
@@ -11,7 +13,6 @@ cart = {}
 # their_item = tobuy_item.lower()
 
 def re_launch():
-    global qty_prompt
     qty_prompt = int(input())
     if qty_prompt <= (items[their_item]['qty']):
         total_price = qty_prompt*(items[their_item]['price'])
